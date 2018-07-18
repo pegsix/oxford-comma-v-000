@@ -6,7 +6,7 @@ elsif array.length == 2
 elsif array.length >= 3
    last_array_spot = "and #{array[-1]}"
    array.pop
-   array.push(last_array_spot)
+   array << (last_array_spot)
    return array.join(", ")
 end
 end
