@@ -1,9 +1,12 @@
 def oxford_comma(array)
-  if 2 values in array
-  array.join(" and ")
-elsif 
-  if 3 values in array
-  array.join(", ") between array(0) and array(1)
-  array.join(", and") between array(1) and array(2)
-
+ if array.length == 1
+   return "#{array[0]}"
+elsif array.length == 2
+    return array.join(" and ")
+elsif array.length >= 3
+   last_array_spot = "and #{array[-1]}"
+   array.pop
+   array.push(last_array_spot)
+   return array.join(", ")
+end
 end
